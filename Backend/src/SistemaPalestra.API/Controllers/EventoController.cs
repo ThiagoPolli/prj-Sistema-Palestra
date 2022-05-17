@@ -4,6 +4,7 @@ using System.Linq;
 using System.Threading.Tasks;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.Extensions.Logging;
+using SistemaPalestra.API.Data;
 using SistemaPalestra.API.Models;
 
 namespace SistemaPalestra.API.Controllers
@@ -12,48 +13,29 @@ namespace SistemaPalestra.API.Controllers
     [Route("api/[controller]")]
     public class EventoController : ControllerBase
     {
-        public IEnumerable<Evento> _evento = new Evento[]{
-            new Evento(){
-                EventoId = 1,
-                    Tema = "Angular",
-                    Local= "MT",
-                    Lote = "1 lote",
-                    QtdPessoas = 100,
-                    DateEnvento = DateTime.Now.AddDays(2).ToString(),
-                    ImageUTL= "kasksdksednskndksnkdns"
-            },
-             new Evento(){
-                EventoId = 2,
-                    Tema = "Angular-2",
-                    Local= "MG",
-                    Lote = "2 lote",
-                    QtdPessoas = 30,
-                    DateEnvento = DateTime.Now.AddDays(2).ToString(),
-                    ImageUTL= "kasksdksednskndksnkdns"
-            }
-
-
-        };
-    
-        public EventoController()
-        {           
+       
+        private readonly DataContext _context;
+        public EventoController(DataContext context)
+        {
+            _context = context;
         }
 
         [HttpGet]
         public IEnumerable<Evento> Get()
         {
-            return _evento;
-           
+            return _context.Eventos;
+
         }
 
-           [HttpGet("{id}")]
-        public IEnumerable<Evento> GetById(int id)
+        [HttpGet("{id}")]
+        public Evento GetById(int id)
         {
-            return _evento.Where(evento => evento.EventoId == id);
-           
+            return _context.Eventos.FirstOrDefault(evento => evento.EventoId == id);
+
         }
         [HttpPost]
-        public string Post(){
+        public string Post()
+        {
             return "POST VALUE";
         }
     }
