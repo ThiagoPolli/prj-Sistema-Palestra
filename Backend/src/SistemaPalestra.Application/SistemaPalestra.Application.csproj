@@ -1,0 +1,12 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>net5.0</TargetFramework>
+  </PropertyGroup>
+
+
+  <ItemGroup>
+    <ProjectReference Include="..\SistemaPalestra.Domain\SistemaPalestra.Domain.csproj" />
+    <ProjectReference Include="..\SistemaPalestra.Persistence\SistemaPalestra.Persistence.csproj" />
+  </ItemGroup>
+</Project>

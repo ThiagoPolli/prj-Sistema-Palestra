@@ -25,7 +25,11 @@
         "frameworks": {
           "net5.0": {
             "targetAlias": "net5.0",
-            "projectReferences": {}
+            "projectReferences": {
+              "/media/thiago/ARQUIVOS/temp/workspaces-NET/prj-SistemaPalestras/Backend/src/SistemaPalestra.Application/SistemaPalestra.Application.csproj": {
+                "projectPath": "/media/thiago/ARQUIVOS/temp/workspaces-NET/prj-SistemaPalestras/Backend/src/SistemaPalestra.Application/SistemaPalestra.Application.csproj"
+              }
+            }
           }
         },
         "warningProperties": {
@@ -77,6 +81,183 @@
             "Microsoft.AspNetCore.App": {
               "privateAssets": "none"
             },
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "/usr/share/dotnet/sdk/5.0.408/RuntimeIdentifierGraph.json"
+        }
+      }
+    },
+    "/media/thiago/ARQUIVOS/temp/workspaces-NET/prj-SistemaPalestras/Backend/src/SistemaPalestra.Application/SistemaPalestra.Application.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "/media/thiago/ARQUIVOS/temp/workspaces-NET/prj-SistemaPalestras/Backend/src/SistemaPalestra.Application/SistemaPalestra.Application.csproj",
+        "projectName": "SistemaPalestra.Application",
+        "projectPath": "/media/thiago/ARQUIVOS/temp/workspaces-NET/prj-SistemaPalestras/Backend/src/SistemaPalestra.Application/SistemaPalestra.Application.csproj",
+        "packagesPath": "/home/thiago/.nuget/packages/",
+        "outputPath": "/media/thiago/ARQUIVOS/temp/workspaces-NET/prj-SistemaPalestras/Backend/src/SistemaPalestra.Application/obj/",
+        "projectStyle": "PackageReference",
+        "configFilePaths": [
+          "/home/thiago/.nuget/NuGet/NuGet.Config"
+        ],
+        "originalTargetFrameworks": [
+          "net5.0"
+        ],
+        "sources": {
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net5.0": {
+            "targetAlias": "net5.0",
+            "projectReferences": {
+              "/media/thiago/ARQUIVOS/temp/workspaces-NET/prj-SistemaPalestras/Backend/src/SistemaPalestra.Domain/SistemaPalestra.Domain.csproj": {
+                "projectPath": "/media/thiago/ARQUIVOS/temp/workspaces-NET/prj-SistemaPalestras/Backend/src/SistemaPalestra.Domain/SistemaPalestra.Domain.csproj"
+              },
+              "/media/thiago/ARQUIVOS/temp/workspaces-NET/prj-SistemaPalestras/Backend/src/SistemaPalestra.Persistence/SistemaPalestra.Persistence.csproj": {
+                "projectPath": "/media/thiago/ARQUIVOS/temp/workspaces-NET/prj-SistemaPalestras/Backend/src/SistemaPalestra.Persistence/SistemaPalestra.Persistence.csproj"
+              }
+            }
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "net5.0": {
+          "targetAlias": "net5.0",
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "/usr/share/dotnet/sdk/5.0.408/RuntimeIdentifierGraph.json"
+        }
+      }
+    },
+    "/media/thiago/ARQUIVOS/temp/workspaces-NET/prj-SistemaPalestras/Backend/src/SistemaPalestra.Domain/SistemaPalestra.Domain.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "/media/thiago/ARQUIVOS/temp/workspaces-NET/prj-SistemaPalestras/Backend/src/SistemaPalestra.Domain/SistemaPalestra.Domain.csproj",
+        "projectName": "SistemaPalestra.Domain",
+        "projectPath": "/media/thiago/ARQUIVOS/temp/workspaces-NET/prj-SistemaPalestras/Backend/src/SistemaPalestra.Domain/SistemaPalestra.Domain.csproj",
+        "packagesPath": "/home/thiago/.nuget/packages/",
+        "outputPath": "/media/thiago/ARQUIVOS/temp/workspaces-NET/prj-SistemaPalestras/Backend/src/SistemaPalestra.Domain/obj/",
+        "projectStyle": "PackageReference",
+        "configFilePaths": [
+          "/home/thiago/.nuget/NuGet/NuGet.Config"
+        ],
+        "originalTargetFrameworks": [
+          "net5.0"
+        ],
+        "sources": {
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net5.0": {
+            "targetAlias": "net5.0",
+            "projectReferences": {}
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "net5.0": {
+          "targetAlias": "net5.0",
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "/usr/share/dotnet/sdk/5.0.408/RuntimeIdentifierGraph.json"
+        }
+      }
+    },
+    "/media/thiago/ARQUIVOS/temp/workspaces-NET/prj-SistemaPalestras/Backend/src/SistemaPalestra.Persistence/SistemaPalestra.Persistence.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "/media/thiago/ARQUIVOS/temp/workspaces-NET/prj-SistemaPalestras/Backend/src/SistemaPalestra.Persistence/SistemaPalestra.Persistence.csproj",
+        "projectName": "SistemaPalestra.Persistence",
+        "projectPath": "/media/thiago/ARQUIVOS/temp/workspaces-NET/prj-SistemaPalestras/Backend/src/SistemaPalestra.Persistence/SistemaPalestra.Persistence.csproj",
+        "packagesPath": "/home/thiago/.nuget/packages/",
+        "outputPath": "/media/thiago/ARQUIVOS/temp/workspaces-NET/prj-SistemaPalestras/Backend/src/SistemaPalestra.Persistence/obj/",
+        "projectStyle": "PackageReference",
+        "configFilePaths": [
+          "/home/thiago/.nuget/NuGet/NuGet.Config"
+        ],
+        "originalTargetFrameworks": [
+          "net5.0"
+        ],
+        "sources": {
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net5.0": {
+            "targetAlias": "net5.0",
+            "projectReferences": {
+              "/media/thiago/ARQUIVOS/temp/workspaces-NET/prj-SistemaPalestras/Backend/src/SistemaPalestra.Domain/SistemaPalestra.Domain.csproj": {
+                "projectPath": "/media/thiago/ARQUIVOS/temp/workspaces-NET/prj-SistemaPalestras/Backend/src/SistemaPalestra.Domain/SistemaPalestra.Domain.csproj"
+              }
+            }
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "net5.0": {
+          "targetAlias": "net5.0",
+          "dependencies": {
+            "Microsoft.EntityFrameworkCore": {
+              "target": "Package",
+              "version": "[5.0.2, )"
+            },
+            "Microsoft.EntityFrameworkCore.Tools": {
+              "target": "Package",
+              "version": "[5.0.2, )"
+            }
+          },
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
             "Microsoft.NETCore.App": {
               "privateAssets": "all"
             }

@@ -4,18 +4,21 @@ using System.Linq;
 using System.Threading.Tasks;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.Extensions.Logging;
-using SistemaPalestra.API.Data;
-using SistemaPalestra.API.Models;
+using SistemaPalestra.Persistence;
+using SistemaPalestra.Domain;
+
+
 
 namespace SistemaPalestra.API.Controllers
+
 {
     [ApiController]
     [Route("api/[controller]")]
     public class EventosController : ControllerBase
     {
        
-        private readonly DataContext _context;
-        public EventosController(DataContext context)
+        private readonly SistemaPalestraContext _context;
+        public EventosController(SistemaPalestraContext context)
         {
             _context = context;
         }
@@ -30,7 +33,7 @@ namespace SistemaPalestra.API.Controllers
         [HttpGet("{id}")]
         public Evento GetById(int id)
         {
-            return _context.Eventos.FirstOrDefault(evento => evento.EventoId == id);
+            return _context.Eventos.FirstOrDefault(evento => evento.Id == id);
 
         }
         [HttpPost]

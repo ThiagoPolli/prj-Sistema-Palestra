@@ -5,7 +5,7 @@
       "Humanizer.Core/2.8.26": {
         "type": "package",
         "compile": {
-          "lib/netstandard2.0/_._": {}
+          "lib/netstandard2.0/Humanizer.dll": {}
         },
         "runtime": {
           "lib/netstandard2.0/Humanizer.dll": {}
@@ -475,6 +475,45 @@
         },
         "runtime": {
           "lib/netcoreapp2.1/_._": {}
+        }
+      },
+      "SistemaPalestra.Application/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v5.0",
+        "dependencies": {
+          "SistemaPalestra.Domain": "1.0.0",
+          "SistemaPalestra.Persistence": "1.0.0"
+        },
+        "compile": {
+          "bin/placeholder/SistemaPalestra.Application.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/SistemaPalestra.Application.dll": {}
+        }
+      },
+      "SistemaPalestra.Domain/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v5.0",
+        "compile": {
+          "bin/placeholder/SistemaPalestra.Domain.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/SistemaPalestra.Domain.dll": {}
+        }
+      },
+      "SistemaPalestra.Persistence/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v5.0",
+        "dependencies": {
+          "Microsoft.EntityFrameworkCore": "5.0.2",
+          "Microsoft.EntityFrameworkCore.Tools": "5.0.2",
+          "SistemaPalestra.Domain": "1.0.0"
+        },
+        "compile": {
+          "bin/placeholder/SistemaPalestra.Persistence.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/SistemaPalestra.Persistence.dll": {}
         }
       }
     }
@@ -1281,6 +1320,21 @@
         "useSharedDesignerContext.txt",
         "version.txt"
       ]
+    },
+    "SistemaPalestra.Application/1.0.0": {
+      "type": "project",
+      "path": "../SistemaPalestra.Application/SistemaPalestra.Application.csproj",
+      "msbuildProject": "../SistemaPalestra.Application/SistemaPalestra.Application.csproj"
+    },
+    "SistemaPalestra.Domain/1.0.0": {
+      "type": "project",
+      "path": "../SistemaPalestra.Domain/SistemaPalestra.Domain.csproj",
+      "msbuildProject": "../SistemaPalestra.Domain/SistemaPalestra.Domain.csproj"
+    },
+    "SistemaPalestra.Persistence/1.0.0": {
+      "type": "project",
+      "path": "../SistemaPalestra.Persistence/SistemaPalestra.Persistence.csproj",
+      "msbuildProject": "../SistemaPalestra.Persistence/SistemaPalestra.Persistence.csproj"
     }
   },
   "projectFileDependencyGroups": {
@@ -1289,6 +1343,7 @@
       "Microsoft.EntityFrameworkCore.Design >= 5.0.2",
       "Microsoft.EntityFrameworkCore.Sqlite >= 5.0.2",
       "Microsoft.EntityFrameworkCore.Tools >= 5.0.2",
+      "SistemaPalestra.Application >= 1.0.0",
       "Swashbuckle.AspNetCore >= 5.6.3"
     ]
   },
@@ -1316,7 +1371,11 @@
       "frameworks": {
         "net5.0": {
           "targetAlias": "net5.0",
-          "projectReferences": {}
+          "projectReferences": {
+            "/media/thiago/ARQUIVOS/temp/workspaces-NET/prj-SistemaPalestras/Backend/src/SistemaPalestra.Application/SistemaPalestra.Application.csproj": {
+              "projectPath": "/media/thiago/ARQUIVOS/temp/workspaces-NET/prj-SistemaPalestras/Backend/src/SistemaPalestra.Application/SistemaPalestra.Application.csproj"
+            }
+          }
         }
       },
       "warningProperties": {

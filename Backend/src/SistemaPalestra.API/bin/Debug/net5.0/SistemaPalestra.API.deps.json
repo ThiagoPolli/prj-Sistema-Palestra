@@ -37,6 +37,7 @@
           "Microsoft.EntityFrameworkCore.Design": "5.0.2",
           "Microsoft.EntityFrameworkCore.Sqlite": "5.0.2",
           "Microsoft.EntityFrameworkCore.Tools": "5.0.2",
+          "SistemaPalestra.Application": "1.0.0",
           "Swashbuckle.AspNetCore": "5.6.3",
           "Microsoft.AspNetCore.Antiforgery": "5.0.0.0",
           "Microsoft.AspNetCore.Authentication.Abstractions": "5.0.0.0",
@@ -333,6 +334,9 @@
             "assemblyVersion": "2.8.0.0",
             "fileVersion": "2.8.26.1919"
           }
+        },
+        "compile": {
+          "lib/netstandard2.0/Humanizer.dll": {}
         }
       },
       "Microsoft.CSharp/4.7.0": {},
@@ -710,6 +714,39 @@
         }
       },
       "System.Memory/4.5.3": {},
+      "SistemaPalestra.Application/1.0.0": {
+        "dependencies": {
+          "SistemaPalestra.Domain": "1.0.0",
+          "SistemaPalestra.Persistence": "1.0.0"
+        },
+        "runtime": {
+          "SistemaPalestra.Application.dll": {}
+        },
+        "compile": {
+          "SistemaPalestra.Application.dll": {}
+        }
+      },
+      "SistemaPalestra.Domain/1.0.0": {
+        "runtime": {
+          "SistemaPalestra.Domain.dll": {}
+        },
+        "compile": {
+          "SistemaPalestra.Domain.dll": {}
+        }
+      },
+      "SistemaPalestra.Persistence/1.0.0": {
+        "dependencies": {
+          "Microsoft.EntityFrameworkCore": "5.0.2",
+          "Microsoft.EntityFrameworkCore.Tools": "5.0.2",
+          "SistemaPalestra.Domain": "1.0.0"
+        },
+        "runtime": {
+          "SistemaPalestra.Persistence.dll": {}
+        },
+        "compile": {
+          "SistemaPalestra.Persistence.dll": {}
+        }
+      },
       "Microsoft.AspNetCore.Antiforgery/5.0.0.0": {
         "compile": {
           "Microsoft.AspNetCore.Antiforgery.dll": {}
@@ -2655,6 +2692,21 @@
       "sha512": "sha512-3oDzvc/zzetpTKWMShs1AADwZjQ/36HnsufHRPcOjyRAAMLDlu2iD33MBI2opxnezcVUtXyqDXXjoFMOU9c7SA==",
       "path": "system.memory/4.5.3",
       "hashPath": "system.memory.4.5.3.nupkg.sha512"
+    },
+    "SistemaPalestra.Application/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    },
+    "SistemaPalestra.Domain/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    },
+    "SistemaPalestra.Persistence/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
     },
     "Microsoft.AspNetCore.Antiforgery/5.0.0.0": {
       "type": "referenceassembly",
